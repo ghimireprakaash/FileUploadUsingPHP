@@ -1,0 +1,78 @@
+@font-face {
+  font-family: palatino;
+  src: url("../font/palatino.ttf");
+  font-weight: bolder;
+}
+
+* {
+  box-sizing: border-box;
+
+  font-family: palatino !important;
+
+  --primary: #ab0000;
+  --secondary: #fead16;
+  --tb-bg-color1: #befcfc;
+  --tb-bg-color2: #fcf0f0;
+}
+
+.top-header {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+
+.top-header .header-one {
+  height: fit-content;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.header-one .img-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 3%;
+  width: 90px;
+  height: 125px;
+}
+
+.img-container img {
+  width: 90px;
+  height: 125px;
+  margin: auto;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px;
+}
+
+h1 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: var(--primary);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#upload-btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 3px 10px;
+  margin-top: 15px;
+}
